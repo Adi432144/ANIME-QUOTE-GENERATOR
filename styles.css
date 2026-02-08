@@ -1,0 +1,126 @@
+/* Reset some default styles */
+* {
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  background-image: url('/img/4932400.jpg'); /* Add the path to your image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 150vh;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+}
+h2{
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.quote-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #333;
+}
+
+#character {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.filter-section {
+  margin-top: 20px;
+}
+
+#anime-filter {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.share-buttons {
+  margin-top: 20px;
+}
+
+#twitter-share {
+  color: #1da1f2;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#twitter-share:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #555;
+}
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: white;
+}
+title{
+  color: black;
+}
+.background video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
