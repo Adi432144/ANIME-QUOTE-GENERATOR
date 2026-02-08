@@ -1,0 +1,77 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Character Card Container */
+.character-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  height: auto  ;
+}
+
+/* Video Background */
+.background video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Character Card */
+.character-card {
+  background-color: rgba(255, 255, 255, 0); /* Semi-transparent white background */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.character-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.character-card img {
+  width: 100%;
+  height: auto  ;
+  display: block;
+  opacity: 0.9; /* Optional: Make the image slightly transparent */
+}
+
+/* Character Info */
+/* Character Info */
+.character-info {
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for text */
+  border-top: 1px solid #f0f0f0;
+}
+
+.character-info h3 {
+  font-size: 18px;
+  margin: 0;
+  color: black; /* Transparent text color */
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .character-container {
+    grid-template-columns: 1fr;
+  }
+}

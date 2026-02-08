@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Quote Generator</title>
+  <link rel="stylesheet" href="/css/styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+  <nav><ul class="nav-links">
+          <li><a href="/html/index.html">Home</a></li>
+          <li><a href="/html/Anime.html">Anime</a></li>
+          <li><a href="/html/Famous.html">Famous</a></li>
+          <li><a href="/html/Updates.html">Updates</a></li>
+          <li><a href="/html/Contact.html">Contact</a><li>
+      </ul>
+   </nav>
+   
+  <header>
+    <h1>Anime Quote Generator</h1>
+    <p>Click to get a random anime quote!</p>
+  </header>
+
+  <main>
+    <section class="quote-container">
+      <p id="quote">"Click the button to get a quote!"</p>
+      <p id="character">- Character Name</p>
+    </section>
+
+    <button id="generate-button">Generate Quote</button>
+
+    <!-- Optional: Filter Quotes by Anime -->
+    <section class="filter-section">
+      <label for="anime-filter">Filter by Anime:</label>
+      <select id="anime-filter">
+        <option value="all">All</option>
+        <option value="Naruto">Naruto</option>
+        <option value="One Piece">One Piece</option>
+        <option value="Attack on Titan">Attack on Titan</option>
+      </select>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Anime Quote Generator</p>
+  </footer>
+
+  <script src="/js/script.js"></script> <!-- Link to external JS -->
+</body>
+</html>
