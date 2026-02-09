@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goku - Quotes</title>
+  <link rel="stylesheet" href="goku.css">
+  <link rel="stylesheet" href="/css/button.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="background">
+    <video autoplay loop muted>
+      <source src="/Character/video/goku-ultra-instinct-kamehameha-dragon-ball-moewalls-com.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h1>Goku - Famous Quotes</h1>
+    <div class="quotes">
+      <div class="quote bot" onclick="copyQuote(this)">
+        <p>"Power comes in response to a need, not a desire. You have to create that need."</p>
+      </div>
+      <div class="quote bot" onclick="copyQuote(this)">
+        <p>"I am the hope of the universe. I am the answer to all living things that cry out for peace."</p>
+      </div>
+      <div class="quote bot" onclick="copyQuote(this)">
+        <p>"I would rather be a brainless monkey than a heartless monster."</p>
+      </div>
+      <div class="quote bot" onclick="copyQuote(this)">
+        <p>"A true fighter doesn’t give up, no matter how tough the odds."</p>
+      </div>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="image-button">
+        <a href="/Character/Dragon ball/DB.html"><img src="/img/hd-png-dragon-ball-z-dbz-crystal-ball-4-stars-701751694862279ebqx9sdnpz-removebg-preview.png" alt="Example" ></a>
+       </button>
+  </div>
+  <div class="button-container">
+    <button class="image-button">
+        <a href="/Character/Dragon ball"><img src="/img/dragon-ball-z-dbz-crystal-ball-1-star-png-701751694862293fasot8y7xc-removebg-preview.png" alt="Example" ></a>
+       </button>
+  </div>
+  <!-- Copy Notification -->
+  <div id="copy-notification">Quote copied to clipboard!</div>
+
+  <!-- JavaScript -->
+<script>
+    // Function to copy the quote text
+function copyQuote(element) {
+  const quoteText = element.querySelector('p').innerText;
+  navigator.clipboard.writeText(quoteText).then(() => {
+    showNotification();
+  });
+}
+
+// Show a notification when the quote is copied
+function showNotification() {
+  const notification = document.getElementById('copy-notification');
+  notification.style.display = 'block';
+  setTimeout(() => {
+    notification.style.display = 'none';
+  }, 3000); // Notification disappears after 3 seconds
+}
+
+  </script>
+</body>
+</html>
